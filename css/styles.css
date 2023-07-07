@@ -1,0 +1,12 @@
+/* styles.css */
+.gif-container video {
+    display: none;
+}
+
+.gif-container:hover video {
+    display: block;
+}
+
+body {
+    cursor: url(../img/curseurnoir.png), default;
+}
