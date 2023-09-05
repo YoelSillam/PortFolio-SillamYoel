@@ -3,534 +3,379 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Yoel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="fontawesome/css/all.min.css"> 
-    <link rel="stylesheet" href="css/magnific-popup.css"> 
+    <title>OCEAN vibes by TemplateMo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/templatemo-ocean-vibes.css">
+
+
+    <!-- Autres balises dans la section head -->
+
+
+    <!--
+
+    TemplateMo 554 Ocean Vibes
+
+    https://templatemo.com/tm-554-ocean-vibes
+
+    -->
+
+
 </head>
-<body >
-    <header class="tm-site-header">
-        <h1 class="tm-mt-0 tm-mb-15"><span class="tm-color-primary">PortFolio</span> <span class="tm-color-gray-2">Sillam Yoël</span></h1>
-        <em class="tm-tagline tm-color-light-gray">simple and effective design</em>
-    </header>
+<body>
+<header class="tm-site-header">
+    <h1 class="tm-mt-0 tm-mb-15"><span class="tm-color-primary">PortFolio</span> <span class="tm-color-gray-2">Sillam Yoël</span>
+    </h1>
+    <em class="tm-tagline tm-color-light-gray">simple and effective design</em>
+</header>
+
+<!-- Video banner 400 px height -->
+
+<table style="width: 100%; height: 100%;">
+    <tr>
+        <td style="text-align: center;">
+            <img src="img/image_processing20200727-27132-19pgvfp.gif" style="width: 50%;" alt="GIF"/>
+        </td>
+    </tr>
+</table>
+<div class="tm-container">
+    <nav class="tm-main-nav">
+        <ul id="inline-popups">
+            <li class="tm-nav-item">
+                <a href="#intro" data-effect="mfp-move-from-top" class="tm-nav-link">
+                    Introduction
+                    <div class="gif-container">
+                        <img src="img/intro.gif" id="gif_1" width="100%">
+                    </div>
+                </a>
+            </li>
+            <li class="tm-nav-item">
+                <a href="#gallery" data-effect="mfp-move-from-top" class="tm-nav-link" id="tm-gallery-link">
+                    Mes Projets
+                    <div class="gif-container">
+                        <img src="img/my-projects.gif" id="gif_2" width="100%">
+                    </div>
+                </a>
+            </li>
+            <li class="tm-nav-item">
+                <a href="#testimonials" data-effect="mfp-move-from-top" class="tm-nav-link">
+                    1er Stage
+                    <div class="gif-container">
+                        <img src="img/stage-design-hogwarts-name.gif" id="gif_3" width="100%">
+                    </div>
+                </a>
+            </li>
+            <li class="tm-nav-item">
+                <a href="#about" data-effect="mfp-move-from-top" class="tm-nav-link">
+                    2eme Stage
+                    <div class="gif-container">
+                        <img src="img/AppLoader.gif" id="gif_4" width="100%">
+                    </div>
+                </a>
+            </li>
+            <li class="tm-nav-item">
+                <a href="#contact" data-effect="mfp-move-from-top" class="tm-nav-link">
+                    Me Contacter
+                    <i class="far fa-3x fa-comments"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<script>
+    // Ajouter l'événement onmouseover à l'élément a
+    var link = document.querySelector('.tm-nav-link');
+    link.addEventListener('mouseover', startGif);
+
+    // Fonction pour démarrer le gif
+    function startGif() {
+        var video = document.getElementById('gif_1');
+        video.play();
+    }
+</script>
 
 
-    <table style="width: 100%; height: 100%;">
-        <tr>
-            <td style="text-align: center;">
-                <img src="img/image_processing20200727-27132-19pgvfp.gif" style="width: 50%;" alt="GIF" />
-            </td>
-        </tr>
-    </table>
-    <div class="tm-container">
-        <nav class="tm-main-nav">
-            <ul id="inline-popups">
-                <li class="tm-nav-item">
-                    <a href="#intro" data-effect="mfp-move-from-top" class="tm-nav-link">
-                        Introduction
-                        <div class="gif-container">
-                            <img  src="img/intro.gif" id="gif_1" width="100%" >
-                        </div>
+<!-- Popup itself -->
+<div id="intro" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+    <a href="#" class="tm-close-popup">
+
+        <i class="fas fa-times"></i>
+    </a>
+    <div class="tm-row tm-intro-row">
+        <div class="tm-col tm-bg-white tm-intro-pad tm-text-center">
+            <h2 class="tm-color-primary tm-page-title">À Propos De Moi</h2>
+            <div class="tm-row tm-content-row">
+                <div class="tm-col-6 tm-intro-col-l">
+                    <p>
+                        Bonjour, je suis ravi de vous accueillir sur mon portfolio qui regroupe les divers projets réalisés durant mon BTS SIO option SLAM.
+                        Actuellement je suis en 2 ème année au lycée ORT DANIEL MAYER à Montreuil. J'ai choisi l'option SLAM afin me spécialiser dans le
+                        domaine du
+                        développement web et des logiciels.
+                        Vous pouvez découvrir mon CV et les projets réalisés.</br>
+                         <a href="img/Tableau de synthèse - Epreuve E4 - BTS SIO 2023 Sillam Yoël.pdf" class="tm-btn tm-btn-primary mfp-prevent-close tm-btn-next">Veuillez télécharger mon tableau de synthèse.</a>
+
+                    </p>
+                </div>
+                <div class="tm-col-6">
+                    <iframe src="img/cv-YoelSillam-copie.pdf" style="width: 500px; height: 500px;"
+                            alt="CV de Yoël Sillam"></iframe>
+                    <div class="tm-text-center">
+                        <a href="#" class="tm-btn tm-btn-primary mfp-prevent-close tm-btn-next">
+                            PortFolio -> Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="gallery" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+    <a href="#" class="tm-close-popup">
+
+        <i class="fas fa-times"></i>
+    </a>
+
+    <!-- Gallery navigation and description -->
+    <div class="tm-col tm-gallery-right">
+
+        <h2 class="tm-color-primary tm-mt-35 tm-page-title">Mes Projets</h2>
+        <div class="tm-row tm-content-row">
+            <div class="tm-gallery">
+                <div class="tm-gallery-container">
+                    <figure class="effect-chico tm-gallery-item portrait">
+                        <img src="img/imageHelpOrt.png" width="500px">
+                        <figcaption>
+                            <p>Connexion Help Ort.</p>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class="effect-chico tm-gallery-item portrait">
+                        <img src="img/imageInscription.png" width="500px">
+                        <figcaption>
+                            <p>Inscription Help Ort.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-chico tm-gallery-item portrait">
+                        <img src="img/imageAjout.png" width="500px">
+                        <figcaption>
+                            <p>Ajout de Matières Help Ort.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="tm-gallery-right-inner">
+                <p>HelpORT est une application WEB qui sera utilisée exclusivement par les
+                    étudiants sur le campus de ORT Montreuil.
+                    Le but de cette application est de fournir une aide entre les étudiants.
+                    Elle permet une interaction limitée dans le temps entre
+                    les étudiants sur des sujets spécifiques.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="testimonials" class="popup mfp-with-anim mfp-hide tm-bg-gray" style="width: 70% ; text-align:center;">
+    <a href="#" class="tm-close-popup">
+
+        <i class="fas fa-times"></i>
+    </a>
+    <div class="tm-testimonials-inner" style="width: 102% ; text-align:center; ">
+        <h1 class="tm-color-primary tm-about-col tm-mb-40 tm-page-title"
+            style="margin-left: 25%; font-size: 40px; line-height: 50px;">Stage de Première Année : Delta 7 </h1>
+        <div class="tm-row tm-testimonial-row" style="width: 282.5% ; text-align:justify; ">
+            <div class="tm-col tm-testimonial-col">
+                <h2>Présentation de l’entreprise</h2>
+                <p> - <b style="color: black; text-decoration: underline;"> Dénomination :</b> Delta 7
+                    </br>      -<b style="color: black; text-decoration: underline;"> Adresse :</b> 53 avenue de Saint
+                    Ouen, Paris.
+                    </br>         - <b style="color: black; text-decoration: underline;">Forme juridique :</b> Association loi 1901 à but non lucratif.
+                    </br>             - <b style="color: black; text-decoration: underline;">Secteur d’activité :</b> Son secteur d’activité́ est dans la santé.
+                </p>
+                <p> -<b style="color: black; text-decoration: underline;">  HISTORIQUE :</b> </br> Jusqu’en 2001, Delta 7 diffuse ses innovations en créant et accompagnant les
+                    associations porteuses de ses actions notamment : </p>
+
+                <ul style="margin-left: 5%;">
+                <li> <p>La Télé-Alarme Delta-Revie pour les personnes âgées,</p></li>
+                    <li><p> Les foyers Delta 7 pour les enfants isolés</p></li>
+                    <li> <p>Les Relais Parents Enfants pour les enfants ayant des parents incarcérés, etc...</p> </li>
+                </ul>
+                   <p> En 2004, Delta 7 juge que ses actions se sont trop élargies et préfère se concentrer sur son action
+                    de handicap et de la dépendance. Elle crée le premier centre d’accueil de jour.
+                    </br>  En 2007, l’association crée 2 nouveaux centres "Casa" à Paris, 17 et 19.
+                    </br>             - <b style="color: black; text-decoration: underline;">Organigramme :</b> </br></br><img class="img-top" style="margin-left: 10%; width: 80%;" src="img/imageEffectif.png">
+
+                    </br></br> - <b style="color: black; text-decoration: underline;">  RESSOURCES TANGIBLES ET INTANGIBLES :</b> </br>Durant mon stage, j’ai eu accès à plusieurs ressources
+                    aussi bien matérielles que logicielles par exemple : photoshop, miscrosoft remote desktop, Excel...
+                       (VBA).</p>
+
+                </li>
+                <hr>
+
+                <h2>Les missions :</h2>
+                     <p>J’ai eu l'opportunité d'executer plusieurs missions durant
+                    mon stage dont deux qui m’ont particulièrement permis de développer mes compétences. J'ai réalisé
+                    un mapping, et un codage excel permettant d’améliorer la qualité de vie des salariés. Effectivement, il permet de faciliter la recherche de fichier et leurs arborescences.
+                </p>
+                <p style=" margin-left: 4%;">
+                    -<b style="color: black; text-decoration: underline; font-size: 22.5px;"> Mission 1 :</b>
+                   </br>
+
+                    La Map : c'est une carte intéractive d'Île-de-France où chaque département mène à un lien différent.
+
+A partir d'une image prise sur internet, je l'ai modifiée afin qu'elle corresponde aux besoins à l'aide de photoshop.
+
+                 J'ai premierement effectué des recherches en ligne pour obtenir les données nécessaires.
+                    Ensuite, j'ai minutieusement tracé les contours de chaque département pour définir
+                    les limites géographiques. J'ai transféré la carte à l'alternante référente du projet,
+                    qui l'a intégrée au site web de l'entreprise : <a href="http://campusdev.delta7.org/index.php?action=presDeChezVous" target="_blank" style="color:dodgerblue">http://campusdev.delta7.org/index.php?action=presDeChezVous</a>
+                </p>
+                <br>
+                <img src="img/imageImage.png" width="300px" height="300px">
+
+                <img src="img/imageCarte.png" width="550px" height="400px">
+            </div>
+
+
+        </div>
+
+
+        <hr style="width: 50%; border: 1px solid; color: darkgray;">
+        <br>
+        <p style=" margin-left: 8%; text-align: justify;width: 84%;">
+            -<b style="color: black; text-decoration: underline; font-size: 22.5px;"> Mission 2 :</b></br>
+            La tâche qui m'a demandé le plus de temps consistait à élaborer
+            un système de codage en VBA (Excel) à l'aide de l'explorateur de fichiers. Il doit permettre de verifier les dossiers existent.
+            Le codage permet de reférencer tous les dossiers présents sur un des disque durs du serveurs ( nommé "Informatique" )
+            Ce projet visait à créer une arborescence complète des noms de dossiers,
+            incluant leur chemin d'accès, leur date de modification, leur date de création,
+            ainsi qu'un bouton de mise à jour permettant de rafraîchir le programme en temps réel,
+            dans le cas où de nouveaux dossiers seraient créés.</p>
+        </p> <img src="img/imageExcel1.png" width="200px" height="150px">
+        <img src="img/imageExcel.png" width="750px" height="450px">
+
+    </div>
+</div>
+
+<div id="about" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+    <a href="#" class="tm-close-popup">
+        return home
+        <i class="fas fa-times"></i>
+    </a>
+    <h2 class="tm-color-primary tm-about-col tm-mb-40 tm-page-title">Stage 2eme Année</h2>
+    <div class="tm-row tm-about-row">
+        <div class="tm-col tm-about-col tm-about-left">
+            <p>A venir...</p>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class="popup mfp-with-anim mfp-hide tm-bg-gray">
+    <a href="#" class="tm-close-popup">
+
+        <i class="fas fa-times"></i>
+    </a>
+    <h2 class="tm-contact-col tm-color-primary tm-page-title tm-mb-40">Pour me contacter</h2>
+    <div class="tm-row tm-contact-row">
+        <div class="tm-col tm-contact-col">
+
+            <!-- Do you need a working HTML contact form?
+                Please visit https://templatemo.com/contact page -->
+
+            <form id="contact-form" action="" method="POST" class="tm-contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control rounded-0" placeholder="Nom et prénom" required/>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control rounded-0" placeholder="Adresse mail"
+                           required/>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="contact-select" name="inquiry">
+                        <option value="-">Sujet</option>
+                        <option value="sales">Développement d'un site web</option>
+                        <option value="creative">Développement d'application</option>
+                        <option value="uiux">Web design</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message"
+                              required=></textarea>
+                </div>
+
+                <div class="form-group tm-text-right">
+                    <button type="submit" class="tm-btn tm-btn-primary">Envoyer maintenant</button>
+                </div>
+            </form>
+        </div>
+        <div class="tm-col tm-contact-col tm-contact-col-r">
+            <!-- Map -->
+            <div class="mapouter tm-mb-40">
+                <div class="gmap_canvas">
+                    <!--   <iframe width="100%" height="520" id="gmap_canvas"
+                           src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                           frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.146817872982!2d2.4018974768081103!3d48.89353907133696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dad7104a4a5%3A0x3fd814967ecd34d2!2s16%20Rue%20Etienne%20Marcel%2C%2093500%20Pantin!5e0!3m2!1sfr!2sfr!4v1688743940345!5m2!1sfr!2sfr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <address class="tm-mb-40">
+                16 Ter Rue Étienne Marcel,<br>
+                93500 Pantin
+            </address>
+
+            <!-- Links -->
+            <ul class="tm-contact-links">
+                <li>
+                    <a href="tel:0750261853">
+                        <i class="fas fa-phone tm-contact-link-icon"></i>
+                        Tel: 07.50.26.18.53
                     </a>
                 </li>
-                <li class="tm-nav-item">
-                    <a href="#gallery" data-effect="mfp-move-from-top" class="tm-nav-link" id="tm-gallery-link">
-                        Mes Projets
-                        <div class="gif-container">
-                            <img  src="img/my-projects.gif" id="gif_2" width="100%" >
-                        </div>
+                <li>
+                    <a href="mailto:redsillam@gmail.com">
+                        <i class="fas fa-at tm-contact-link-icon"></i>
+                        Email: redsillam@gmail.com
                     </a>
                 </li>
-                <li class="tm-nav-item">
-                    <a href="#testimonials" data-effect="mfp-move-from-top" class="tm-nav-link">
-                        1er Stage
-                        <div class="gif-container">
-                            <img  src="img/stage-design-hogwarts-name.gif" id="gif_3" width="100%" >
-                        </div>
-                    </a>
-                </li>
-                <li class="tm-nav-item">
-                    <a href="#about" data-effect="mfp-move-from-top" class="tm-nav-link">
-                        2eme Stage
-                        <div class="gif-container">
-                            <img  src="img/AppLoader.gif" id="gif_4" width="100%" >
-                        </div>
-                    </a>
-                </li>
-                <li class="tm-nav-item">
-                    <a href="#contact" data-effect="mfp-move-from-top" class="tm-nav-link">
-                        Me Contacter
-                        <i class="far fa-3x fa-comments"></i>
+                <li>
+                    <a href="https://yoelsillam.github.io/PortFolio-SillamYoel/">
+                        <i class="fas fa-link tm-contact-link-icon"></i>
+                        URL: yoelsillam.github.io
                     </a>
                 </li>
             </ul>
-        </nav>
-    </div>
-
-    <script>
-        // Ajouter l'événement onmouseover à l'élément a
-        var link = document.querySelector('.tm-nav-link');
-        link.addEventListener('mouseover', startGif);
-
-        // Fonction pour démarrer le gif
-        function startGif() {
-            var video = document.getElementById('gif_1');
-            video.play();
-        }
-    </script>
-
-
-    <!-- Popup itself -->
-        <div id="intro" class="popup mfp-with-anim mfp-hide tm-bg-gray">
-            <a href="#" class="tm-close-popup">
-
-                <i class="fas fa-times"></i>
-            </a>
-            <div class="tm-row tm-intro-row">
-                <div class="tm-col tm-bg-white tm-intro-pad tm-text-center">
-                    <h2 class="tm-color-primary tm-page-title">À Propos De Moi</h2>
-                    <div class="tm-row tm-content-row">
-                        <div class="tm-col-6 tm-intro-col-l">
-                            <p>
-                                Bonjour, je m'appelle Yoël Sillam. Actuellement je suis en 1ère année de BTS SIO option SLAM
-                                au lycée ORT DANIEL MAYER à Montreuil. J'ai choisi l'option SLAM pour me spécialiser dans le domaine du
-                                développement web et des logiciels.
-                                Vous pouvez découvrir mon CV et les projets réalisés durant cette 1ère année d'études.
-                            </p>
-                        </div>
-                        <div class="tm-col-6">
-                            <iframe src="img/cv-YoelSillam-copie.pdf" style="width: 500px; height: 500px;" alt="CV de Yoël Sillam"></iframe>
-                            <div class="tm-text-center">
-                                <a href="#" class="tm-btn tm-btn-primary mfp-prevent-close tm-btn-next">
-                                    PortFolio -> Project
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-                    </div>
-                </div>                
-            </div> 
-        </div>
-
-        <div id="gallery" class="popup mfp-with-anim mfp-hide tm-bg-gray">
-            <a href="#" class="tm-close-popup">
-
-                <i class="fas fa-times"></i>
-            </a>
-
-                <!-- Gallery navigation and description -->
-                <div class="tm-col tm-gallery-right">
-
-                    <h2 class="tm-color-primary tm-mt-35 tm-page-title">Mes Projets</h2>
-                                <div class="tm-row tm-content-row">
-                                    <div class="tm-gallery">
-                                        <div class="tm-gallery-container">
-                                            <figure class="effect-chico tm-gallery-item portrait">
-                                        <img src="img/imageHelpOrt.png" width="500px">
-                                                <figcaption>
-                                                    <p>Connexion Help Ort.</p>
-                                                </figcaption>
-                                            </figure>
-
-
-                                            <figure class="effect-chico tm-gallery-item portrait">
-                                                    <img src="img/imageInscription.png" width="500px">
-                                                    <figcaption>
-                                                        <p>Inscription Help Ort.</p>
-                                                    </figcaption>
-                                                </figure>
-                                            <figure class="effect-chico tm-gallery-item portrait">
-                                                <img src="img/imageAjout.png" width="500px">
-                                                <figcaption>
-                                                    <p>Ajout de Matières Help Ort.</p>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-
-                                        <div class="tm-gallery-right-inner">
-                                            <p>HelpORT est une application WEB qui sera utilisée exclusivement par les
-                                                étudiants sur le campus de ORT Montreuil.
-                                                Le but de cette application est de fournir une aide entre les étudiants.
-                                                 Cette aide vise à permettre une interaction limitée dans le temps entre
-                                                les étudiants sur des sujets spécifiques.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                </div>
-
-
-
-
-
-
-
-
-
-        <div id="testimonials" class="popup mfp-with-anim mfp-hide tm-bg-gray">
-            <a href="#" class="tm-close-popup">
-
-                <i class="fas fa-times"></i>
-            </a>
-            <div class="tm-testimonials-inner">
-                <h2 class="tm-color-primary tm-about-col tm-mb-40 tm-page-title">Stage de Première Année </h2>
-                <div class="tm-row tm-testimonial-row">                
-                    <div class="tm-col tm-testimonial-col">
-                        <p>
-                            - Mon stage dans l'entreprise Delta 7
-                               </br> - Détails sur l’entreprise
-                            </br>    - ***IDENTIFICATION***
-                            </br>     - Dénomination : Delta 7
-                            </br>      - Adresse : 53 avenue de Saint Ouen, Paris
-                            </br>         - Forme juridique : Delta 7 a pour forme juridique d’être une association loi 1901 à but non lucratif
-                            </br>             - Organigramme : <img src="img/imageEffectif.png">
-                            </br>             - Secteur d’activité : Son secteur d’activité́ est dans la santé
-                        </p>
-
-                          <p>  	HISTORIQUE : Jusqu’en 2001, Delta 7 diffuse ses innovations en créant et accompagnant les associations porteuses de ses actions notamment :  </br>
-                              -	La Télé-Alarme Delta-Revie pour les personnes âgées,  </br>
-                              -	Les foyers Delta 7 pour les enfants isolés </br>
-                              -	Les Relais Parents Enfants pour les enfants ayant des parents incarcérés, etc... </br>
-
-                              En 2004, Delta 7 juge que ses actions se sont trop élargies et préfère se concentrer sur son action de handicap et de la dépendance et crée le premier centre d’accueil de jour.
-                              </br>  En 2007, l’association crée 2 nouveaux centres Casa à Paris, 17 et 19.
-
-
-                              </br>  	RESSOURCES TANGIBLES ET INTANGIBLES : •	Durant mon alternance, j’ai accès à plusieurs ressources qu’elles soient matérielles ou encore logicielles : photoshop, miscrosoft remote desktop, Excel (VBA),
-
-                          </p>
-                    </div>
-                    <div class="tm-col tm-testimonial-col tm-testimonial-col-2">
-                        <blockquote>
-                            <p>
-                                o	Les missions
-                                </br> J’ai reçu plusieurs missions durant mon stage dont deux qui m’ont particulièrement plut, un mapping (un endroit sur carte ou on pouvait cliquer dessus) et un codage excel permettant d’améliorer la qualité de vie au travail.
-                                <img src="img/imageImage.png">
-                                <img src="img/image-Image.png">
-                                <img src="img/imageCarte.png">
-                            </p>
-                        </blockquote>
-                        <blockquote class="tm-mb-50">
-                            Code :
-                           <!--  <textarea width="30%" height="250px"> -->
-                     <!--            <img src="WhatsApp Image 2023-06-15 at 12.27.01 (1).jpeg" usemap="#image-map">
-
-                                <map name="image-map">
-                                    <area target="" alt="" title="" href="" coords="194,112,212,129,190,153,192,184,202,189,215,208,198,214,196,226,174,249,177,265,167,290,146,289,154,305,125,344,96,313,97,294,57,259,47,241,47,232,53,217,42,197,46,183,37,170,33,146,23,134,22,118,13,105,14,84,45,68,67,89,94,91,110,87,119,99,139,102,159,113" shape="poly">
-                                </map> -->
-                            <textarea style="width: 300px; height: 300px;" height="500px">
-    &lt;img src="WhatsApp Image 2023-06-15 at 12.27.01 (1).jpeg" usemap="#image-map"&gt;
-
-    &lt;map name="image-map"&gt;
-        &lt;area target="" alt="" title="" href="" coords="194,112,212,129,190,153,192,184,202,189,215,208,198,214,196,226,174,249,177,265,167,290,146,289,154,305,125,344,96,313,97,294,57,259,47,241,47,232,53,217,42,197,46,183,37,170,33,146,23,134,22,118,13,105,14,84,45,68,67,89,94,91,110,87,119,99,139,102,159,113" shape="poly"&gt;
-    &lt;/map&gt;
-
-</textarea>
-
-                         <!--   </textarea> -->
-                        </blockquote>  
-
-                    </div>
-                    <div class="tm-col tm-testimonial-col tm-testimonial-col-2">
-                        <p>
-                            Explication :
-                            La balise &lt;img&gt; est utilisée pour insérer une image dans une page HTML.
-                            Dans ce cas, la source de l'image est définie par l'attribut src, qui pointe vers le fichier
-                            "WhatsApp Image 2023-06-15 at 12.27.01 (1).jpeg". Cette image sera affichée sur la page.
-                            Ensuite, nous avons la balise &lt;map&gt; qui est utilisée pour définir une carte d'image.
-                            La carte d'image permet de définir des zones spécifiques de l'image sur lesquelles l'utilisateur peut cliquer.
-                            La balise &lt;map&gt; doit avoir un attribut name qui spécifie le nom de la carte d'image.
-                                Dans ce cas, le nom de la carte d'image est "image-map".
-                                À l'intérieur de la balise &lt;map&gt;, nous avons la balise &lt;area&gt;.
-                                    La balise &lt;area&gt; est utilisée pour définir une zone spécifique de l'image cliquable.
-                                    Elle doit être placée à l'intérieur de la balise &lt;map&gt;.
-                                        Les attributs importants de la balise &lt;area&gt; sont les suivants : target: Spécifie où ouvrir le lien après le clic.
-                                        Dans ce cas, il est vide, ce qui signifie que le lien s'ouvrira dans la même fenêtre.
-                                        alt: Texte alternatif affiché si l'image ne peut pas être chargée. title: Titre de la zone de l'image.
-                                        href: L'URL de destination lorsque la zone est cliquée.
-                                        Dans ce cas, il est vide, ce qui signifie qu'il n'y a pas de lien associé à cette zone. coords:
-                                        Les coordonnées de la zone sur l'image.
-                                        Les coordonnées spécifiques sont fournies sous forme de paires de nombres séparées par des virgules,
-                                        représentant les points x et y. Ces coordonnées définissent les contours de la zone cliquable.
-                                        shape: Spécifie la forme de la zone cliquable. Dans ce cas, la forme est "poly", ce qui signifie une zone polygonale.
-                                        Les coordonnées dans l'attribut coords décrivent les points qui délimitent une zone polygonale sur l'image.
-                                        Ces coordonnées sont utilisées pour définir la forme de la zone cliquable.
-                                        Dans ce cas, la zone est un polygone avec plusieurs points définis.
-
-
-
-                    </div>
-
-                </div>
-                <hr>
-
-                <textarea style="width: 1000px; height: 1025px;" height="500px">Sub ListFoldersInFolder(folderPath As String, Optional parentPath As String = "", Optional rowIndex As Long = 1)
-                    Dim objFSO As Object
-                    Dim objFolder As Object
-                    Dim objSubFolder As Object
-                    Dim ws As Worksheet
-                    Set ws = ThisWorkbook.ActiveSheet
-
-                    ' Créer un objet FileSystemObject
-                    Set objFSO = CreateObject("Scripting.FileSystemObject")
-
-                    ' Obtenir l'objet Folder pour le dossier spécifié
-                    Set objFolder = objFSO.GetFolder(folderPath)
-
-                    ' Parcourir tous les sous-dossiers du dossier
-                    For Each objSubFolder In objFolder.Subfolders
-                    ' Afficher le nom et le chemin du sous-dossier dans le tableau
-                    ws.Range("A" & rowIndex).Value = GetIndentation(parentPath) & objSubFolder.Name
-                    ws.Range("B" & rowIndex).Value = "Chemin : " & parentPath & "\" & objSubFolder.Name
-                    ws.Range("C" & rowIndex).Value = "Date de modification : " & objSubFolder.DateLastModified
-                    ws.Range("D" & rowIndex).Value = "Date de création : " & objSubFolder.DateCreated
-                    rowIndex = rowIndex + 1
-
-                    ' Appeler récursivement la fonction pour chaque sous-dossier
-                    ListFoldersInFolder objSubFolder.Path, parentPath & "\" & objSubFolder.Name, rowIndex
-                    Next objSubFolder
-                    End Sub
-
-                    Function GetIndentation(ByVal parentPath As String) As String
-                    Dim depth As Integer
-                    depth = Len(parentPath) - Len(Replace(parentPath, "\", ""))
-                    GetIndentation = String(depth * 4, " ")
-                    End Function
-
-                    Sub StartListFoldersInFolder()
-                    Dim folderPath As String
-
-                    ' Spécifier le chemin du dossier
-                    folderPath = "D:\_•S. Informatique " ' Remplacez "D:\" par le chemin du dossier souhaité
-
-                    ' Effacer le contenu du tableau existant à partir de la deuxième ligne
-                    Range("A2:D" & Range("A" & Rows.Count).End(xlUp).Row).ClearContents
-
-                    ' Entêtes des colonnes
-                    Range("A1").Value = "Nom"
-                    Range("B1").Value = "Chemin"
-                    Range("C1").Value = "Date de modification"
-                    Range("D1").Value = "Date de création"
-
-                    ' Appeler la fonction pour le dossier spécifié
-                    ListFoldersInFolder folderPath, folderPath, 2
-                    End Sub
-
-                    Sub MiseAJour()
-                    ' Récupérer le dossier spécifié
-                    Dim folderPath As String
-                    folderPath = "D:\_•S. Informatique " ' Remplacez "D:\" par le chemin du dossier souhaité
-
-                    ' Effacer le contenu du tableau existant à partir de la deuxième ligne
-                    Range("A2:D" & Range("A" & Rows.Count).End(xlUp).Row).ClearContents
-
-                    ' Appeler la fonction pour le dossier spécifié
-                    ListFoldersInFolder folderPath, folderPath, 2
-
-                    MsgBox "Le tableau a été mis à jour avec succès !"
-                    End Sub
-                </textarea>
-</br>
-                   <p> Ce code VBA (Visual Basic for Applications) est utilisé pour parcourir et répertorier tous les sous-dossiers d'un dossier spécifié dans une feuille de calcul Excel. Voici une explication ligne par ligne :
-
-                    Sub ListFoldersInFolder(folderPath As String, Optional parentPath As String = "", Optional rowIndex As Long = 1)
-
-                    Cela déclare une sous-routine nommée "ListFoldersInFolder" avec trois arguments : folderPath (chemin du dossier à parcourir), parentPath (chemin du dossier parent, optionnel, par défaut vide) et rowIndex (indice de ligne dans la feuille de calcul, optionnel, par défaut 1).
-                    Dim objFSO As Object
-
-                    Cela déclare une variable objFSO de type Object. Elle sera utilisée pour représenter l'objet FileSystemObject, qui permet d'accéder au système de fichiers.
-                    Dim objFolder As Object
-
-                    Cela déclare une variable objFolder de type Object. Elle sera utilisée pour représenter le dossier spécifié.
-                    Dim objSubFolder As Object
-
-                    Cela déclare une variable objSubFolder de type Object. Elle sera utilisée pour représenter chaque sous-dossier parcouru.
-                    Dim ws As Worksheet
-
-                    Cela déclare une variable ws de type Worksheet. Elle sera utilisée pour représenter la feuille de calcul active du classeur Excel.
-                    Set ws = ThisWorkbook.ActiveSheet
-
-                    Cela assigne à la variable ws la référence de la feuille de calcul active du classeur actuel.
-                    Set objFSO = CreateObject("Scripting.FileSystemObject")
-
-                    Cela crée une instance de l'objet FileSystemObject en utilisant la méthode CreateObject. Cet objet permettra d'accéder aux propriétés et méthodes liées au système de fichiers.
-                    Set objFolder = objFSO.GetFolder(folderPath)
-
-                    Cela assigne à la variable objFolder l'objet Folder correspondant au chemin de dossier spécifié. La méthode GetFolder de l'objet FileSystemObject est utilisée pour obtenir cet objet Folder.
-                    For Each objSubFolder In objFolder.Subfolders
-
-                    Cela commence une boucle pour chaque sous-dossier dans le dossier spécifié. La variable objSubFolder sera assignée à chaque sous-dossier successivement lors de l'itération de la boucle.
-                    ws.Range("A" & rowIndex).Value = GetIndentation(parentPath) & objSubFolder.Name
-
-                    Cela assigne le nom du sous-dossier à la cellule de la colonne A et de la ligne rowIndex dans la feuille de calcul. GetIndentation(parentPath) est utilisé pour obtenir une indentation appropriée basée sur le chemin du dossier parent.
-                    ws.Range("B" & rowIndex).Value = "Chemin : " & parentPath & "\" & objSubFolder.Name
-
-                    Cela assigne le chemin complet du sous-dossier à la cellule de la colonne B et de la ligne rowIndex dans la feuille de calcul.
-                    ws.Range("C" & rowIndex).Value = "Date de modification : " & objSubFolder.DateLastModified
-
-                    Cela assigne la date de modification du sous-dossier à la cellule de la colonne C et de la ligne rowIndex dans la feuille de calcul.
-                    ws.Range("D" & rowIndex).Value = "Date de création : " & objSubFolder.DateCreated
-
-                    Cela assigne la date de création du sous-dossier à la cellule de la colonne D et de la ligne rowIndex dans la feuille de calcul.
-                    rowIndex = rowIndex + 1
-
-                    Cela incrémente la variable rowIndex de 1 pour passer à la prochaine ligne dans la feuille de calcul.
-                    ListFoldersInFolder objSubFolder.Path, parentPath & "\" & objSubFolder.Name, rowIndex
-
-                    Cela appelle récursivement la sous-routine ListFoldersInFolder pour chaque sous-dossier trouvé. Les arguments sont mis à jour pour refléter le sous-dossier actuel.
-                    Function GetIndentation(ByVal parentPath As String) As String
-
-                    Cela déclare une fonction nommée "GetIndentation" qui prend le chemin du dossier parent en argument et renvoie une chaîne de caractères représentant l'indentation appropriée pour les sous-dossiers.
-                    depth = Len(parentPath) - Len(Replace(parentPath, "\", ""))
-
-                    Cela calcule la profondeur du chemin du dossier parent en comptant le nombre de caractères "" présents.
-                    GetIndentation = String(depth * 4, " ")
-
-                    Cela retourne une chaîne de caractères contenant des espaces, où le nombre d'espaces est égal à la profondeur multipliée par 4. Cela permet de simuler une indentation visuelle dans la feuille de calcul.
-                    Sub StartListFoldersInFolder()
-
-                    Cela déclare une sous-routine nommée "StartListFoldersInFolder". Elle sera utilisée pour démarrer le processus de répertoriation des sous-dossiers.
-                    folderPath = "D:\_•S. Informatique "
-
-                    Cela assigne le chemin du dossier à parcourir à la variable folderPath. Vous pouvez modifier ce chemin pour spécifier le dossier souhaité.
-                    Range("A2:D" & Range("A" & Rows.Count).End(xlUp).Row).ClearContents
-
-                    Cela efface le contenu des cellules dans les colonnes A, B, C et D, à partir de la deuxième ligne de la feuille de calcul. Cela permet de supprimer les résultats précédents avant de répertorier les nouveaux sous-dossiers.
-                    54-57. Range("A1").Value = "Nom", Range("B1").Value = "Chemin", Range("C1").Value = "Date de modification", Range("D1").Value = "Date de création"
-                    - Cela assigne les en-têtes des colonnes dans les cellules A1, B1, C1 et D1 de la feuille de calcul. Ces en-têtes seront utilisés pour identifier les informations répertoriées.
-
-                    ListFoldersInFolder folderPath, folderPath, 2
-
-                    Cela appelle la sous-routine ListFoldersInFolder pour le dossier spécifié (folderPath). Les arguments parentPath et rowIndex sont mis à jour pour refléter le dossier racine et la ligne de départ.
-                    Sub MiseAJour()
-
-                    Cela déclare une sous-routine nommée "MiseAJour". Elle sera utilisée pour mettre à jour la liste des sous-dossiers.
-                    folderPath = "D:\_•S. Informatique "
-
-                    Cela assigne le chemin du dossier à parcourir à la variable folderPath. Vous pouvez modifier ce chemin pour spécifier le dossier souhaité.
-                    Range("A2:D" & Range("A" & Rows.Count).End(xlUp).Row).ClearContents
-
-                    Cela efface le contenu des cellules dans les colonnes A, B, C et D, à partir de la deuxième ligne de la feuille de calcul. Cela permet de supprimer les résultats précédents avant de répertorier les nouveaux sous-dossiers.
-                    ListFoldersInFolder folderPath, folderPath, 2
-
-                    Cela appelle la sous-routine ListFoldersInFolder pour le dossier spécifié (folderPath). Les arguments parentPath et rowIndex sont mis à jour pour refléter le dossier racine et la ligne de départ.
-                    MsgBox "Le tableau a été mis à jour avec succès !"
-
-                    Cela affiche une boîte de message avec le message "Le tableau a été mis à jour avec succès !" pour indiquer que la mise à jour a été effectuée.
-                </p> <img src="img/imageExcel1.png">
-                <img src="img/imageExcel.png">
-
-            </div>            
-        </div>
-
-        <div id="about" class="popup mfp-with-anim mfp-hide tm-bg-gray">
-            <a href="#" class="tm-close-popup">
-                return home
-                <i class="fas fa-times"></i>
-            </a>
-            <h2 class="tm-color-primary tm-about-col tm-mb-40 tm-page-title">Stage 2eme Année</h2>
-            <div class="tm-row tm-about-row">
-                <div class="tm-col tm-about-col tm-about-left">                    
-<p>A venir...</p>
-                </div>               
-            </div>
-        </div>
-
-        <div id="contact" class="popup mfp-with-anim mfp-hide tm-bg-gray">
-            <a href="#" class="tm-close-popup">
-
-                <i class="fas fa-times"></i>
-            </a>
-            <h2 class="tm-contact-col tm-color-primary tm-page-title tm-mb-40">Pour me contacter</h2>
-            <div class="tm-row tm-contact-row">
-                <div class="tm-col tm-contact-col">
-                
-                <!-- Do you need a working HTML contact form?
-                	Please visit https://templatemo.com/contact page -->
-                    
-                    <form id="contact-form" action="" method="POST" class="tm-contact-form">
-                        <div class="form-group">
-                            <input type="text" name="name" class="form-control rounded-0" placeholder="Nom et prénom" required />
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" class="form-control rounded-0" placeholder="Adresse mail" required />
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control" id="contact-select" name="inquiry">
-                                <option value="-">Sujet</option>
-                                <option value="sales">Développement d'un site web</option>
-                                <option value="creative">Développement d'application</option>
-                                <option value="uiux">Web design</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message" required=></textarea>
-                        </div>
-
-                        <div class="form-group tm-text-right">
-                            <button type="submit" class="tm-btn tm-btn-primary">Envoyer maintenant</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="tm-col tm-contact-col tm-contact-col-r">
-                    <!-- Map -->
-                    <div class="mapouter tm-mb-40">
-                        <div class="gmap_canvas">
-                         <!--   <iframe width="100%" height="520" id="gmap_canvas"
-                                src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>-->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.146817872982!2d2.4018974768081103!3d48.89353907133696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dad7104a4a5%3A0x3fd814967ecd34d2!2s16%20Rue%20Etienne%20Marcel%2C%2093500%20Pantin!5e0!3m2!1sfr!2sfr!4v1688743940345!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-
-                    <!-- Address -->
-                    <address class="tm-mb-40">
-                        16 Ter Rue Étienne Marcel,<br>
-                        93500 Pantin
-                    </address>
-
-                    <!-- Links -->
-                    <ul class="tm-contact-links">
-                        <li>
-                            <a href="tel:0750261853">
-                                <i class="fas fa-phone tm-contact-link-icon"></i>
-                                Tel: 07.50.26.18.53
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:redsillam@gmail.com">
-                                <i class="fas fa-at tm-contact-link-icon"></i>
-                                Email: redsillam@gmail.com
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://yoelsillam.github.io/PortFolio-SillamYoel/">
-                                <i class="fas fa-link tm-contact-link-icon"></i>
-                                URL: yoelsillam.github.io
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
+</div>
+</div>
 
-    <footer class="tm-footer">
-        <span>Copyright &copy; 2023 Yoel Sillam</span>
-      
-        
+<footer class="tm-footer">
+    <span>Copyright &copy; 2020 Your Company</span>
+    <span>Web Designed by
+        <a href="https://templatemo.com" title="free website templates" target="_parent"
+           rel="nofollow">TemplateMo</a></span>
 </footer>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>    
-    <script src="js/templatemo-script.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/templatemo-script.js"></script>
 
 </body>
 </html>
